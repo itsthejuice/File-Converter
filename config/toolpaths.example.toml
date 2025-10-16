@@ -1,0 +1,13 @@
+# Example tool paths configuration
+# Copy this file to toolpaths.toml and customize for your system
+
+[paths]
+# FFmpeg for video/audio conversion
+ffmpeg = "/usr/bin/ffmpeg"
+# ffmpeg = "/usr/local/bin/ffmpeg"
+# ffmpeg = "C:\\Program Files\\ffmpeg\\bin\\ffmpeg.exe"
+
+# Future tools (not yet implemented)
+# imagemagick = "/usr/bin/convert"
+# pandoc = "/usr/bin/pandoc"
+# tesseract = "/usr/bin/tesseract"

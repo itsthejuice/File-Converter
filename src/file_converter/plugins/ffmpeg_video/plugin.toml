@@ -1,0 +1,13 @@
+# FFmpeg Video/Audio Plugin Configuration
+
+name = "ffmpeg_video"
+version = "0.1.0"
+entry = "plugin.py"
+description = "Video and audio conversion using FFmpeg"
+
+tool_requires = ["ffmpeg>=5"]
+
+[[capabilities]]
+inputs = ["video/*", "audio/*"]
+outputs = ["video/mp4", "video/webm", "image/gif", "audio/mp3", "audio/flac"]
+

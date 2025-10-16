@@ -1,0 +1,34 @@
+# File Converter Default Configuration
+
+[privacy]
+local_only = true
+telemetry = false
+network_access = false
+
+[paths]
+ffmpeg = "/usr/bin/ffmpeg"
+
+# Preset configurations for common conversions
+[presets.video_mp4]
+web_1080p = { crf = 23, preset = "medium", scale = "1920:1080" }
+web_720p = { crf = 23, preset = "medium", scale = "1280:720" }
+web_480p = { crf = 23, preset = "fast", scale = "854:480" }
+high_quality = { crf = 18, preset = "slow" }
+fast_encode = { crf = 28, preset = "ultrafast" }
+
+[presets.video_webm]
+web_1080p = { crf = 30, preset = "medium", scale = "1920:1080" }
+web_720p = { crf = 30, preset = "medium", scale = "1280:720" }
+
+[presets.image_gif]
+gif_small = { fps = 12, scale = "480:-1" }
+gif_medium = { fps = 15, scale = "720:-1" }
+gif_large = { fps = 20, scale = "1080:-1" }
+
+[presets.audio_mp3]
+standard = { quality = 2 }
+high = { quality = 0 }
+low = { quality = 5 }
+
+[presets.audio_flac]
+default = {}

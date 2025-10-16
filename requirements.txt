@@ -1,0 +1,6 @@
+flet>=0.21.0
+python-magic>=0.4.27
+pluggy>=1.3.0
+tomli>=2.0.1
+colorama>=0.4.6
+
